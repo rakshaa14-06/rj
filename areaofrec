@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class RectangleArea {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+       
+        double length = scanner.nextDouble();
+        double width = scanner.nextDouble();
+
+        
+        if (length <= 0 || width <= 0) {
+            System.out.println("Length and width must be positive values.");
+        } else {
+            
+            double area = length * width;
+
+            
+            System.out.printf("%.1f\n", area);
+        }
+
+        
+        scanner.close();
+    }
+}
